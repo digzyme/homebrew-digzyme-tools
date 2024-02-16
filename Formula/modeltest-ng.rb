@@ -22,6 +22,6 @@ class ModeltestNg < Formula
   end
 
   test do
-    system "modeltest-ng", "--version"
+    shell_output("#{bin}/modeltest-ng --version 1>&2", result = 0)
   end
 end
