@@ -10,7 +10,7 @@ class Uchime < Formula
   license "public domain"
 
   def install
-    system "make"
+    system "ENV_GCC_OPTS=env make ENV_GCC_OPTS='-std=c++11'"
     bin.install "uchime"
   end
 
